@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mit alles, scharf — die Döner-App für den DACH-Raum</title>
+<meta name="description" content="Finde Dönerläden in deiner Nähe und bewerte sie nach Fleisch, Brot, Soße, Frische und Preis-Leistung. Für Deutschland, Österreich und die Schweiz.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+  :root { --bg:#FAF6EF; --card:#FFF; --text:#1C1712; --muted:#7A6F63; --border:#E8E0D2;
+          --accent:#B8321F; --green:#1F6F43; --cream:#E5D4B3; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:'DM Sans',system-ui,sans-serif; line-height:1.6; }
+  .wrap { max-width:900px; margin:0 auto; padding:0 24px; }
+  header { padding:72px 0 40px; }
+  h1 { font-family:'DM Serif Display',Georgia,serif; font-weight:400; font-size:clamp(38px,7vw,60px);
+       line-height:1.05; margin:0 0 14px; }
+  .lead { font-size:19px; color:var(--muted); max-width:560px; margin:0; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; margin:40px 0; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:20px; }
+  .card h2 { font-family:'DM Serif Display',Georgia,serif; font-weight:400; font-size:20px; margin:0 0 6px; }
+  .card p { margin:0; font-size:15px; color:var(--muted); }
+  .stat { font-family:'DM Serif Display',Georgia,serif; font-size:34px; line-height:1.1; }
+  .soon { display:inline-block; padding:6px 14px; border-radius:999px; background:var(--cream);
+          font-size:13px; font-weight:700; }
+  a { color:var(--accent); }
+  footer { margin-top:56px; padding:24px 0 60px; border-top:1px solid var(--border);
+           color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Mit alles,<br>scharf.</h1>
+    <p class="lead">
+      Die Döner-App für Deutschland, Österreich und die Schweiz. Bewertet wird nicht mit einer
+      Sterne-Zahl, sondern mit dem, worüber man wirklich streitet: Fleisch, Brot, Soße, Frische
+      und Preis-Leistung.
+    </p>
+    <p style="margin-top:24px"><span class="soon">Bald in den Stores</span></p>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <div class="stat">18.028</div>
+      <p>Läden aus OpenStreetMap — Deutschland, Österreich und die Schweiz</p>
+    </div>
+    <div class="card">
+      <h2>Sechs Teilnoten</h2>
+      <p>Fleisch, Brot, Soße, Frische, Preis-Leistung und Schärfe statt einer einzigen Zahl</p>
+    </div>
+    <div class="card">
+      <h2>Check-ins</h2>
+      <p>Jeden gekauften Döner einzeln festhalten, mit Preis und Foto</p>
+    </div>
+    <div class="card">
+      <h2>Aktuell statt alt</h2>
+      <p>Bewertungen der letzten 90 Tage zählen stärker — du siehst, wo es <em>gerade</em> schmeckt</p>
+    </div>
+  </div>
+
+  <footer>
+    <a href="./datenschutz.html">Datenschutz</a> · <a href="./impressum.html">Impressum</a><br>
+    Ladendaten © OpenStreetMap-Mitwirkende (ODbL)
+  </footer>
+
+</div>
+</body>
+</html>
